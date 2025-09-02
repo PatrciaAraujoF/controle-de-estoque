@@ -1,0 +1,20 @@
+
+
+.cabecalho{
+    background-color: #032b54;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: #ECF0F1;
+    font-family: "Montserrat", sans-serif;
+    
+}
+footer{
+    background-color: #032b54;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}

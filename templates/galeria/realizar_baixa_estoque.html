@@ -1,0 +1,19 @@
+{% extends 'galeria/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="p-5">
+    <h1>Baixa de Estoque</h1>
+    <h3>Peça: {{ detalhe.peca.nome }}</h3>
+    <h4>Quantidade Atual: {{ detalhe.quantidade_final }}</h4>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="quantidade">Quantidade a ser retirada:</label>
+            <input type="number" id="quantidade" name="quantidade" class="form-control" required min="1">
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Realizar Baixa</button>
+    </form>
+    <a href="{% url 'index' %}" class="btn btn-secondary mt-3">Voltar</a>
+</section>
+{% endblock %}
